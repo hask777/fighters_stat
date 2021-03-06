@@ -4,5 +4,5 @@ from fighters_stat import FightersStatistics
 # fighter_id = ""
 
 fs = FightersStatistics()
-data = fs.get_fighters_list_stat()
-print(data)
+fs.get_fighters_list_stat()
+fs.dump()

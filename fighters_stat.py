@@ -18,4 +18,18 @@ class FightersStatistics:
             data = data[0]["CareerStats"]
         except:
             data = None
+
+        self.fighter_stat = data
         return data
+
+    def dump(self):
+        if self.fighter_stat is None:
+            return
+
+        fighter_title = "Fighter Name" # TODO: get fighter name from data
+        fighter_title = fighter_title.replace(" ","_").lower()
+        file_name = fighter_title + ".json"
+        with open(file_name, 'w') as f:
+            json.dump(self.fighter_stat, f, indent=4)
+
+        print("file dumped")

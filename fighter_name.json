@@ -1,0 +1,12 @@
+{
+    "FighterId": 140000001,
+    "FirstName": "Chance",
+    "LastName": "Rencountre",
+    "SigStrikesLandedPerMinute": 2.6,
+    "SigStrikeAccuracy": 31.7,
+    "TakedownAverage": 3.2,
+    "SubmissionAverage": 0.8,
+    "KnockoutPercentage": 0.0,
+    "TechnicalKnockoutPercentage": 0.0,
+    "DecisionPercentage": 13.3
+}
