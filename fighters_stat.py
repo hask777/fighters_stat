@@ -1,5 +1,6 @@
 import requests
 import json
+from operator import itemgetter
 
 class FightersStatistics:
 
@@ -7,6 +8,7 @@ class FightersStatistics:
         # self.api_key = api_key
         # self.fighter_id = fighter_id
         self.fighter_stat = None 
+        self.fighter_data = None
 
     def get_fighters_list_stat(self): 
         url = f"https://api.sportsdata.io/v3/mma/scores/json/Fighters"
@@ -14,12 +16,25 @@ class FightersStatistics:
         json_url = requests.get(url, headers=headers)
         data = json.loads(json_url.text)
         # print(data)
+
         try:
-            data = data[0]["CareerStats"]
+            data = data
         except:
             data = None
 
         self.fighter_stat = data
+
+        def get_fighter_knocks(player):   
+            knockOuts = player['Wins']
+
+            if type(knockOuts) != int:
+                knockOuts = 1
+
+            return knockOuts
+
+        list1 = sorted(data, key=get_fighter_knocks, reverse=True)
+        print(list1)
+        
         return data
 
     def dump(self):
