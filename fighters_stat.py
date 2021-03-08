@@ -4,12 +4,14 @@ from operator import itemgetter
 
 class FightersStatistics:
 
+    # The constructor Method
     def __init__(self): # TODO:fighter_id
         # self.api_key = api_key
         # self.fighter_id = fighter_id
         self.fighter_stat = None 
         self.fighter_data = None
 
+    # Get any fighter statistics
     def get_fighters_list_stat(self): 
         url = f"https://api.sportsdata.io/v3/mma/scores/json/Fighters"
         headers = {'Ocp-Apim-Subscription-Key': '6a440b2acb3d45bcae299abb9813839c'}
@@ -22,8 +24,6 @@ class FightersStatistics:
         except:
             data = None
 
-        self.fighter_stat = data
-
         def get_fighter_knocks(player):   
             knockOuts = player['Wins']
 
@@ -35,8 +35,10 @@ class FightersStatistics:
         list1 = sorted(data, key=get_fighter_knocks, reverse=True)
         print(list1)
         
-        return data
+        self.fighter_stat = list1
+        return list1
 
+    # Dump File Method
     def dump(self):
         if self.fighter_stat is None:
             return
