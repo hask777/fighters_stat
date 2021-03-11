@@ -1,0 +1,156 @@
+[
+    {
+        "EventId": 166,
+        "LeagueId": 1,
+        "Name": "UFC Fight Night: Holloway vs. Kattar",
+        "ShortName": "UFC Fight Night",
+        "Season": 2021,
+        "Day": "2021-01-16T00:00:00",
+        "DateTime": "2021-01-16T12:00:00",
+        "Status": "Final",
+        "Active": true
+    },
+    {
+        "EventId": 167,
+        "LeagueId": 1,
+        "Name": "UFC Fight Night: Chiesa vs. Magny",
+        "ShortName": "UFC Fight Night",
+        "Season": 2021,
+        "Day": "2021-01-20T00:00:00",
+        "DateTime": "2021-01-20T09:00:00",
+        "Status": "Final",
+        "Active": true
+    },
+    {
+        "EventId": 168,
+        "LeagueId": 1,
+        "Name": "UFC 257: Poirier vs. McGregor 2",
+        "ShortName": "UFC 257",
+        "Season": 2021,
+        "Day": "2021-01-23T00:00:00",
+        "DateTime": "2021-01-23T19:00:00",
+        "Status": "Final",
+        "Active": true
+    },
+    {
+        "EventId": 171,
+        "LeagueId": 1,
+        "Name": "UFC Fight Night: Overeem vs. Volkov",
+        "ShortName": "UFC Fight Night",
+        "Season": 2021,
+        "Day": "2021-02-06T00:00:00",
+        "DateTime": "2021-02-06T17:00:00",
+        "Status": "Final",
+        "Active": true
+    },
+    {
+        "EventId": 169,
+        "LeagueId": 1,
+        "Name": "UFC 258: Usman vs. Burns",
+        "ShortName": "UFC 258",
+        "Season": 2021,
+        "Day": "2021-02-13T00:00:00",
+        "DateTime": "2021-02-13T19:00:00",
+        "Status": "Final",
+        "Active": true
+    },
+    {
+        "EventId": 172,
+        "LeagueId": 1,
+        "Name": "UFC Fight Night: Blaydes vs. Lewis",
+        "ShortName": "UFC Fight Night",
+        "Season": 2021,
+        "Day": "2021-02-20T00:00:00",
+        "DateTime": "2021-02-20T17:00:00",
+        "Status": "Final",
+        "Active": true
+    },
+    {
+        "EventId": 174,
+        "LeagueId": 1,
+        "Name": "UFC Fight Night: Rozenstruik vs. Gane",
+        "ShortName": "UFC Fight Night",
+        "Season": 2021,
+        "Day": "2021-02-27T00:00:00",
+        "DateTime": "2021-02-27T18:00:00",
+        "Status": "Scheduled",
+        "Active": true
+    },
+    {
+        "EventId": 170,
+        "LeagueId": 1,
+        "Name": "UFC 259: Blachowicz vs. Adesanya",
+        "ShortName": "UFC 259",
+        "Season": 2021,
+        "Day": "2021-03-06T00:00:00",
+        "DateTime": "2021-03-06T17:15:00",
+        "Status": "Final",
+        "Active": true
+    },
+    {
+        "EventId": 173,
+        "LeagueId": 1,
+        "Name": "UFC Fight Night: Edwards vs. Muhammad",
+        "ShortName": "UFC Fight Night",
+        "Season": 2021,
+        "Day": "2021-03-13T00:00:00",
+        "DateTime": "2021-03-13T17:00:00",
+        "Status": "Scheduled",
+        "Active": true
+    },
+    {
+        "EventId": 176,
+        "LeagueId": 1,
+        "Name": "UFC Fight Night: Brunson vs. Holland",
+        "ShortName": "UFC Fight Night",
+        "Season": 2021,
+        "Day": "2021-03-20T00:00:00",
+        "DateTime": "2021-03-20T19:00:00",
+        "Status": "Scheduled",
+        "Active": true
+    },
+    {
+        "EventId": 175,
+        "LeagueId": 1,
+        "Name": "UFC 260: Miocic vs. Ngannou 2",
+        "ShortName": "UFC 260",
+        "Season": 2021,
+        "Day": "2021-03-27T00:00:00",
+        "DateTime": "2021-03-27T18:15:00",
+        "Status": "Scheduled",
+        "Active": true
+    },
+    {
+        "EventId": 179,
+        "LeagueId": 1,
+        "Name": "UFC Fight Night: 4/10",
+        "ShortName": "UFC Fight Night",
+        "Season": 2021,
+        "Day": "2021-04-10T00:00:00",
+        "DateTime": "2021-04-10T20:00:00",
+        "Status": "Scheduled",
+        "Active": true
+    },
+    {
+        "EventId": 177,
+        "LeagueId": 1,
+        "Name": "UFC Fight Night: Whittaker vs. Costa",
+        "ShortName": "UFC Fight Night",
+        "Season": 2021,
+        "Day": "2021-04-17T00:00:00",
+        "DateTime": "2021-04-17T17:00:00",
+        "Status": "Scheduled",
+        "Active": true
+    },
+    {
+        "EventId": 178,
+        "LeagueId": 1,
+        "Name": "UFC 261: Zhang vs. Namajunas",
+        "ShortName": "UFC 261",
+        "Season": 2021,
+        "Day": "2021-04-24T00:00:00",
+        "DateTime": "2021-04-24T18:15:00",
+        "Status": "Scheduled",
+        "Active": true
+    }
+]

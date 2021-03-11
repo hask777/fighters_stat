@@ -6,7 +6,7 @@ import os
 webdriver_path = os.getcwd()+"\\webdriver\\chromedriver.exe"
 image_path = os.getcwd()+"\\photos"
 
-file = "fighter_name.json"
+file = "fighters.json"
 data =None
 with open(file, 'r') as f:
     data = json.load(f)
@@ -15,13 +15,13 @@ with open(file, 'r') as f:
 
 for fighter in data:
     # print(fighter["FirstName"] + " " + fighter["LastName"])
-    search_keys = [fighter["FirstName"] + " " + fighter["LastName"] + "png"]
+    search_keys = [fighter["FirstName"] + " " + fighter["LastName"] + " " + "png"]
 
     #Parameters
-    number_of_images = 10
+    number_of_images = 2
     headless = False
-    min_resolution = (0,0)
-    max_resolution = (1920,1080)
+    min_resolution = (400,800)
+    max_resolution = (400,800)
 
     #Main program
     for search_key in search_keys:
