@@ -87,7 +87,7 @@ class FightersStatistics:
         return data
 
     def get_events_2020(self):
-        url = f"https://api.sportsdata.io/v3/mma/scores/json/Schedule/UFC/2020"
+        url = f"https://api.sportsdata.io/v3/mma/scores/json/Schedule/UFC/2021"
         headers = {'Ocp-Apim-Subscription-Key': '6a440b2acb3d45bcae299abb9813839c'}
         json_url = requests.get(url, headers=headers)
         data = json.loads(json_url.text)
@@ -125,7 +125,7 @@ class FightersStatistics:
         if self.fighter_stat is None:
             return
 
-        fighter_title = "Events_2020" # TODO: get fighter name from data
+        fighter_title = "Events_2021" # TODO: get fighter name from data
         fighter_title = fighter_title.replace(" ","_").lower()
         file_name = fighter_title + ".json"
         with open(file_name, 'w') as f:
