@@ -120,6 +120,42 @@ class FightersStatistics:
         self.fighter_stat = events_2020
         return events_2020
 
+    def get_fights_by_fighterId(self):
+        file = "events_2020.json"
+        data = None
+        with open(file, 'r') as f:
+            data = json.load(f)
+
+        try:
+            data = data
+        except:
+            data = None
+
+        for event in data:
+            # print(event["Fights"])
+            fights = event["Fights"]
+
+            fighter_id = 140000485
+
+            for fight in fights:
+                # print(fight["Fighters"])
+                fighters = fight["Fighters"]
+                for fighter in fighters:
+                    # print(fighter["FighterId"])
+                    if fighter["FighterId"] == fighter_id:
+                        print(fight["FightId"])
+
+                        # fight_id = fight["FightId"]
+                    
+        #     return 
+
+        # list1 = sorted(data, key=get_fighter_wins, reverse=True)
+        # print(list1)
+        
+        # self.fighter_stat = list1
+        # return list1 
+
+
     # Dump File Method
     def dump(self):
         if self.fighter_stat is None:
