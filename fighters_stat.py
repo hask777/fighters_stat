@@ -57,17 +57,75 @@ class FightersStatistics:
         return list1
 
     def get_event_2021(self):
-        pass
+        url = f"https://api.sportsdata.io/v3/mma/scores/json/Schedule/UFC/2021"
+        headers = {'Ocp-Apim-Subscription-Key': '6a440b2acb3d45bcae299abb9813839c'}
+        json_url = requests.get(url, headers=headers)
+        data = json.loads(json_url.text)
+        # print(data)
+
+        try:
+            data = data
+        except:
+            data = None
+
+        self.fighter_stat = data
+        return data
 
     def get_event_2020(self):
-        pass
+        url = f"https://api.sportsdata.io/v3/mma/scores/json/Schedule/UFC/2020"
+        headers = {'Ocp-Apim-Subscription-Key': '6a440b2acb3d45bcae299abb9813839c'}
+        json_url = requests.get(url, headers=headers)
+        data = json.loads(json_url.text)
+        # print(data)
+
+        try:
+            data = data
+        except:
+            data = None
+
+        self.fighter_stat = data
+        return data
+
+    def get_events_2020(self):
+        url = f"https://api.sportsdata.io/v3/mma/scores/json/Schedule/UFC/2020"
+        headers = {'Ocp-Apim-Subscription-Key': '6a440b2acb3d45bcae299abb9813839c'}
+        json_url = requests.get(url, headers=headers)
+        data = json.loads(json_url.text)
+        # print(data)
+
+        events = []
+        for event in data:
+            # print(event["EventId"])
+            events.append(event["EventId"])
+            # event_id = event["EventId"]
+        # print(events)
+
+        events_2020 = []
+        for event_id in events:
+            event_url = f"https://api.sportsdata.io/v3/mma/scores/json/Event/{event_id}"
+            event_headers = {'Ocp-Apim-Subscription-Key': '6a440b2acb3d45bcae299abb9813839c'}
+            json_event = requests.get(event_url, headers=event_headers)
+            event_data = json.loads(json_event.text)
+            # print(event_data)
+            events_2020.append(event_data)
+            # print(len(events_2020))
+                  
+        # print(len(events_2020))
+        
+        try:
+            events_2020 = events_2020
+        except:
+            events_2020 = None
+
+        self.fighter_stat = events_2020
+        return events_2020
 
     # Dump File Method
     def dump(self):
         if self.fighter_stat is None:
             return
 
-        fighter_title = "Leagues" # TODO: get fighter name from data
+        fighter_title = "Events_2020" # TODO: get fighter name from data
         fighter_title = fighter_title.replace(" ","_").lower()
         file_name = fighter_title + ".json"
         with open(file_name, 'w') as f:
